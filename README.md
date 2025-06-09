@@ -26,19 +26,56 @@ Cabin: Replaced with "Unknown".
 
 Embarked: Filled with most common value "S".
 
-🔹 Univariate Analysis
-Feature	Insight
-Survival Rate	~38.4% passengers survived, indicating high fatality overall.
-Passenger Class	Most passengers belonged to 3rd class, followed by 1st and 2nd.
-Gender Distribution	Males outnumbered females, yet had a significantly lower survival rate.
-Age Distribution	Age ranged from infants to elderly; most were aged between 20–40 years.
+🚨 Critical Survival Factors
+1. Gender Impact (Strongest Predictor)
 
-🔹 Bivariate Analysis
-Relationship Analyzed	Key Finding
-Survival by Gender	Females had much higher survival rates than males.
-Survival by Passenger Class	1st class passengers had the highest chance of survival.
-Survival by Embarked Port	Passengers embarking from Cherbourg (C) had a higher survival rate.
-Age vs Survival	Younger passengers showed a slightly better survival rate.
+Female Survival Rate: ~74.2%
+Male Survival Rate: ~18.9%
+Key Insight: "Women and children first" policy was clearly implemented
+Statistical Significance: Gender had the strongest correlation with survival
+
+2. Social Class Hierarchy
+
+1st Class Survival: ~63.0%
+2nd Class Survival: ~47.3%
+3rd Class Survival: ~24.2%
+Key Insight: Economic status directly influenced access to lifeboats
+
+3. Age Factor Analysis
+
+Children (<18): Higher survival rates (~58%)
+Adults (18-64): Moderate survival rates (~38%)
+Elderly (65+): Lower survival rates (~25%)
+Key Insight: Age-based priority system favored children
+
+🏠 Family Dynamics
+4. Family Size Optimization
+
+Traveling Alone: ~30% survival rate
+Small Families (2-4): ~55% survival rate
+Large Families (5+): ~16% survival rate
+Key Insight: Small family groups had survival advantages
+
+5. Sibling & Spouse Impact
+
+0 Siblings/Spouse: Lower survival
+1-2 Siblings/Spouse: Optimal survival
+3+ Siblings/Spouse: Decreased survival
+Key Insight: Moderate family connections were beneficial
+
+💰 Economic Indicators
+6. Fare Analysis
+
+Average Fare (Survivors): ~$48.40
+Average Fare (Non-survivors): ~$22.10
+Key Insight: Higher-paying passengers had better survival odds
+
+7. Embarkation Port Patterns
+
+Cherbourg (C): ~55% survival rate
+Queenstown (Q): ~39% survival rate
+Southampton (S): ~34% survival rate
+Key Insight: Cherbourg passengers (often wealthier) survived more
 
 📌 Conclusion
 Socioeconomic status and gender played a significant role in determining survival.

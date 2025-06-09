@@ -2,37 +2,49 @@
 Exploratory Data Analysis of Titanic Dataset using Python
 
 # Key Findings and Insights
-print("\n" + "="*50)
-print("KEY FINDINGS AND INSIGHTS")
-print("="*50)
 
-print("\n1. SURVIVAL INSIGHTS:")
-print(f"   • Overall survival rate: {df['Survived'].mean():.1%}")
-print(f"   • Women had higher survival rate: {df[df['Sex']=='female']['Survived'].mean():.1%}")
-print(f"   • Men had lower survival rate: {df[df['Sex']=='male']['Survived'].mean():.1%}")
+📝 Project Summary: Titanic Dataset Analysis
+This project explores the Titanic dataset using Python in Google Colab. It involves data cleaning, univariate and bivariate analysis, and derives key insights using visualizations and statistical methods.
 
-print("\n2. CLASS INSIGHTS:")
-for pclass in sorted(df['Pclass'].unique()):
-    rate = df[df['Pclass']==pclass]['Survived'].mean()
-    print(f"   • Class {pclass} survival rate: {rate:.1%}")
+✅ Objective
+To analyze passenger demographics and travel classes from the Titanic dataset and uncover patterns that influenced survival rates.
 
-print("\n3. AGE INSIGHTS:")
-child_survival = df[df['Age'] < 18]['Survived'].mean()
-adult_survival = df[df['Age'] >= 18]['Survived'].mean()
-print(f"   • Children (<18) survival rate: {child_survival:.1%}")
-print(f"   • Adults (18+) survival rate: {adult_survival:.1%}")
+🔧 Tools & Libraries Used
+Python (Pandas, NumPy)
 
-print("\n4. FAMILY INSIGHTS:")
-alone_survival = df[df['FamilySize'] == 1]['Survived'].mean()
-with_family_survival = df[df['FamilySize'] > 1]['Survived'].mean()
-print(f"   • Passengers alone survival rate: {alone_survival:.1%}")
-print(f"   • Passengers with family survival rate: {with_family_survival:.1%}")
+Matplotlib & Seaborn (Data Visualization)
 
-print("\n5. ECONOMIC INSIGHTS:")
-avg_fare_survived = df[df['Survived'] == 1]['Fare'].mean()
-avg_fare_died = df[df['Survived'] == 0]['Fare'].mean()
-print(f"   • Average fare of survivors: ${avg_fare_survived:.2f}")
-print(f"   • Average fare of non-survivors: ${avg_fare_died:.2f}")
+Google Colab (Development Environment)
+
+📊 Key Exploratory Findings
+🔹 Data Cleaning
+Missing values were handled:
+
+Age: Filled with median value.
+
+Cabin: Replaced with "Unknown".
+
+Embarked: Filled with most common value "S".
+
+🔹 Univariate Analysis
+Feature	Insight
+Survival Rate	~38.4% passengers survived, indicating high fatality overall.
+Passenger Class	Most passengers belonged to 3rd class, followed by 1st and 2nd.
+Gender Distribution	Males outnumbered females, yet had a significantly lower survival rate.
+Age Distribution	Age ranged from infants to elderly; most were aged between 20–40 years.
+
+🔹 Bivariate Analysis
+Relationship Analyzed	Key Finding
+Survival by Gender	Females had much higher survival rates than males.
+Survival by Passenger Class	1st class passengers had the highest chance of survival.
+Survival by Embarked Port	Passengers embarking from Cherbourg (C) had a higher survival rate.
+Age vs Survival	Younger passengers showed a slightly better survival rate.
+
+📌 Conclusion
+Socioeconomic status and gender played a significant role in determining survival.
+
+The project successfully uses EDA techniques to extract meaningful insights and builds a solid foundation for predictive modeling in the future.
+
 
 # Summary Report
 print("\n" + "="*50)

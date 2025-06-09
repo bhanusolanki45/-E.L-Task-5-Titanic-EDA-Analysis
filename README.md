@@ -63,7 +63,7 @@ Key Insight: Small family groups had survival advantages
 3+ Siblings/Spouse: Decreased survival
 Key Insight: Moderate family connections were beneficial
 
-💰 Economic Indicators
+
 6. Fare Analysis
 
 Average Fare (Survivors): ~$48.40
